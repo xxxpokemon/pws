@@ -1,6 +1,10 @@
 # pws
 profielwerkstuk
 
+##Voortgang:
+
+![arduino](/artwork/IMG_20151007_190225.jpg)
+
 ##todo
 1. transistor toevoegen
 de pwm zit op pin 5, kan niet genoeg stroom leveren voor luidspreker,
