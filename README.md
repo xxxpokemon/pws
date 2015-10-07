@@ -4,7 +4,7 @@ profielwerkstuk
 ##Voortgang:
 
 
-<img src="./artwork/IMG_20151007_190225.jpg" alt="Drawing" style="width: 200px;"/>
+<img src="./artwork/IMG_20151007_190225.jpg" alt="Drawing" width=500px"/>
 ##todo
 1. transistor toevoegen
 de pwm zit op pin 5, kan niet genoeg stroom leveren voor luidspreker,
