@@ -2,7 +2,7 @@
 
 void setup() {
   // put your setup code here, to run once:
-
+  setPwmFrequency(5, 1);
 }
   int val;
   
