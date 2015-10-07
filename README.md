@@ -10,9 +10,7 @@ profielwerkstuk
 de pwm zit op pin 5, kan niet genoeg stroom leveren voor luidspreker,
 dus gebruiken we een transistor.
 2. timer interrupt
-
 3. frequentie van pwm omhoog
-
 
 opties:
 
