@@ -23,6 +23,7 @@ opties:
 - push/pull stage, darlington
 
 Voor/nadelen 
+
 Klasse D: geen koeling nodig, want uitgangstrap alleen aan en uit dus geen weerstand geen hitte. Componenten kunnen dicht bij elkaar. Kan kleiner. Batterij voeding voldoende. Wel programeren. 
 Arduino programeren. In Arduino IDE. Aansluiten op transistor, want chip kan geen stroom leveren. 
 
