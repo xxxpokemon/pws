@@ -15,10 +15,23 @@ Het tellen gaat met de snelheid van de central prossesing unit (CPU) klok. Deze 
 ```c
 	TCCR1A = 0b10000011;
 ```
+Dit kan netter met voorgedefinieerde variabelen.
+```c
+	TCCR1A = (1 << COM1A1) | (1 << WGMA11) | (1 << WGMA10);
+```
+Zie verder broncode. Amplifier.ino 
 
+##Polariteit 
 
+Geluidssignalen hebben zowel positieve als negatieve polariteit. De analoog digitaal omzetter van de "adc" atmega kan alleen positief aan. De pwm produceert ook alleen maar positieve signalen. Zowel voor de in/uitgang moeten we een oplossing bedenken.
 
+###ingang
 
+Dit betekent dat we een biass moeten toevoegen. Wat ervoor zorgt dat het negatieve deel van het geluidssignaal ook positief wordt. 
+
+###uitgang
+
+H-brug
 
 
 
