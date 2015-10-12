@@ -3,7 +3,12 @@ profielwerkstuk
 
 ##PWM
 
-Een klasse D versterker maakt gebruik van puls breedte modulatie (pwm). Het uitgangssignaal is een blokgolf, waarbij de breedte van het blok evenredig varieert met het geluidssignaal. In dit project wordt de blokgolf door een arduino gemaakt. De arduino is een bordje waarop een microcontrollerchip (atmega 328p) werkt. Het voordeel is dat deze zowel een analoge ingang als digitale uitgang heeft (pwm). Het te versterken signaal kunnen we inlezen met de analoge ingang en omzetten naar een pwm signaal. Dit alles door te programmeren in C. Echter stuiten wij op het volgende probleem. De arduino programmeeromgeving (ide) maakt gebruik van een dialect van de programmeertaal c en geeft geen toegang tot alle mogelijkheden van de atmegachip. Ook niet degene die wij nodig hebben. 
+Een klasse D versterker maakt gebruik van puls breedte modulatie (pwm). Het uitgangssignaal is een blokgolf, waarbij de breedte van het blok evenredig varieert met het geluidssignaal. In dit project wordt de blokgolf door een arduino gemaakt. De arduino is een bordje waarop een microcontrollerchip (atmega 328p) werkt. 
+
+<img src="./artwork/arduino.png" width=500px />
+
+
+Het voordeel is dat deze zowel een analoge ingang als digitale uitgang heeft (pwm). Het te versterken signaal kunnen we inlezen met de analoge ingang en omzetten naar een pwm signaal. Dit alles door te programmeren in C. Echter stuiten wij op het volgende probleem. De arduino programmeeromgeving (ide) maakt gebruik van een dialect van de programmeertaal c en geeft geen toegang tot alle mogelijkheden van de atmegachip. Ook niet degene die wij nodig hebben. 
 Te weten: De standaard pwm frequentie is veel te laag, deze ligt in het hoorbare gebied (freq. lager dan 20 kHz). Bij pwm willen we een gemiddelde hoorbaar maken en niet de puls zelf. Hiervoor moet de frequentie dus ver boven het hoorbare gebied liggen. Door de puls zelf weg te filteren houden wij het gemiddelde over wat het gewenste signaal is. 
 
 ###Werking pwm op atmega 328p
