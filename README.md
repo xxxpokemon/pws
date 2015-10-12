@@ -11,6 +11,11 @@ de pwm zit op pin 5, kan niet genoeg stroom leveren voor luidspreker,
 dus gebruiken we een transistor.
 2. timer interrupt
 3. frequentie van pwm omhoog
+4. schema afmaken 
+
+##schema
+
+<img src="./artwork/amplifier_bb.png" width=500px/>
 
 opties:
 
