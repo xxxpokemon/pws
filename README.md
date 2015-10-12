@@ -11,7 +11,13 @@ Te weten: De standaard pwm frequentie is veel te laag, deze ligt in het hoorbare
 Wij maken gebruik van de [datasheet](http://www.atmel.com/images/atmel-8271-8-bit-avr-microcontroller-atmega48a-48pa-88a-88pa-168a-168pa-328-328p_datasheet_complete.pdf) voor de atmega328p. Dit is gebruikelijk in de elektronica om gebruik te maken van de datasheets van onderdelen. Hier staat de werking van de atmega328p beschreven. 
 De pwm maakt gebruik van een telregister (TCR). Deze telt van 0 tot TOP en begint daarna weer bij nul (ad infinitum). De uitgang kan gekoppeld worden aan de output compare register (OCR), deze bevat een zeker getal. Als TCR tussen 0 en dit getal is, dan is de uitgangspin hoog en anders laag. Dus de verhouding OCR TOP bepaalt de breedte van de puls. 
 De atmega328p heeft 3 pwm registers, twee 8-bits en één 16-bits. 8-bits is een te lage resolutie voor goed geluid. 16-bits is CD kwaliteit, maar dan wordt de frequentie te laag. 
-Het tellen gaat met de snelheid van de central prossesing unit (CPU) klok. Deze is 16 MHz. Dus 1 periode duurt: 65535 * (1/16000000)=.0040959375 seconden=243 Hz. Dit is een extreem lage frequentie. Dit zit vol in het hoorbare gebied. Beetje jammer. Dus is het voordelig als we het register in de 10-bits modus zetten. Dus 1024*(1/1600000)=.000064 seconden= 15625 Hz. Dit vinden wij acceptabel. Nu moeten we de admega 328p dus instellen op 10-bits FAST PWM.
+Het tellen gaat met de snelheid van de central prossesing unit (CPU) klok. Deze is 16 MHz. Dus 1 periode duurt: 65535 * (1/16000000)= 0.0040959375 seconden = 243 Hz. Dit is een extreem lage frequentie. Dit zit vol in het hoorbare gebied. Beetje jammer. Dus is het voordelig als we het register in de 10-bits modus zetten. Dus 1024 * (1/1600000) = 0.000064 seconden = 15625 Hz. Dit vinden wij acceptabel. Nu moeten we de admega 328p dus instellen op 10-bits FAST PWM. Hoe dit moet staat beschreven in de datasheet paragraaf 16.11 ofzo. Hier staat welke bits hoe ingesteld moeten worden. Om de TCR in non-inverting pwm mode te zetten moet de 8e bit van het TTCR1A register aan zijn. Om de 10-bits FAST PWM aan te zetten moeten bit 1 en 2 ook aan. 
+```c
+	TCCR1A = 0b10000011;
+```
+
+
+
 
 
 
