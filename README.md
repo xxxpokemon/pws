@@ -3,7 +3,7 @@ profielwerkstuk
 
 ##PWM
 
-Een klasse D versterker maakt gebruik van puls breedte modulatie (pwm). Het uitgangssignaal is een blokgolf, waarbij de breedte van het blok evenredig varieert met het geluidssignaal. In dit project wordt de blokgolf door een arduino gemaakt. De arduino is een bordje waarop een microcontrollerchip (atmega 328p) werkt. 
+Een klasse D versterker maakt gebruik van puls breedte modulatie (pwm). Het uitgangssignaal is een blokgolf, waarbij de breedte van het blok evenredig varieert met het geluidssignaal. In dit project wordt de blokgolf door een arduino gemaakt. De arduino is een bordje waarop een microcontrolerchip (atmega 328p) werkt. 
 
 <img src="./artwork/arduino.png" width=500px />
 
