@@ -49,14 +49,6 @@ PWM A: signaal - offset
 PWM B: offset - signaal 
 
 
-
-
-
-
-
-
-
-
 ##Voortgang:
 
 
