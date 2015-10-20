@@ -60,6 +60,7 @@ dus gebruiken we een transistor.
 2. timer interrupt
 3. frequentie van pwm omhoog
 4. schema afmaken 
+5. arduino programmeren (PWM A, PWM B)
 
 ##schema
 
