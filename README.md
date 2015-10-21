@@ -48,6 +48,7 @@ Formule:
 PWM A: signaal - offset 
 PWM B: offset - signaal 
 
+<img src="./artwork/output_bb.png" width=500px />
 
 ##Voortgang:
 
