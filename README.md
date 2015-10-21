@@ -37,7 +37,7 @@ Dit betekent dat we een biass moeten toevoegen. Wat ervoor zorgt dat het negatie
 
 H-brug
 in de H-brug gebruiken we vermogen transistors, ook deze kunnen niet direct door de arduino worden aangestuurd. (Want de stroom die door basis moet lopen moet groot zijn, om de transisitor helemaal aan te zetten)
-NPN en PNP transistor. 
+NPN en PNP transistor.
 We maken gebruik van een BJT (bipolar junction transistor) 
 
 De adruino moet dus twee uitgangen hebben, omdat we gebruik maken van een H-brug. Een plus PWM (PWM A) en een min PWM (PWM B). Zo kunnen we ook het positieve signaal negatief maken. 
