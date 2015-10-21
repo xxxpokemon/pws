@@ -50,6 +50,8 @@ Formule:
 PWM A: signaal - offset 
 PWM B: offset - signaal 
 
+<img src="./arwork/schematic.svg/schematic.png" width=500px />
+
 <img src="./artwork/output_bb.png" width=500px />
 
 ##Voortgang:
