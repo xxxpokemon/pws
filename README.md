@@ -70,6 +70,9 @@ dus gebruiken we een transistor.~~
 3. ~~frequentie van pwm omhoog~~
 4. schema afmaken 
 5. ~~arduino programmeren (PWM A, PWM B)~~
+6. Behuizing
+7. Grafieken maken
+8. Printplaat maken 
 
 ##schema
 
