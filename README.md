@@ -63,13 +63,13 @@ Breadboard:
 
 <img src="./artwork/IMG_20151007_190225.jpg" alt="Drawing" width=500px"/>
 ##todo
-1. transistor toevoegen
-de pwm zit op pin 5, kan niet genoeg stroom leveren voor luidspreker,
+1. ~~transistor toevoegen
+de pwm zit op pin 5, kan niet genoeg stroom leveren voor luidspreker~~
 dus gebruiken we een transistor.
-2. timer interrupt
-3. frequentie van pwm omhoog
+2. ~~timer interrupt~~
+3. ~~frequentie van pwm omhoog~~
 4. schema afmaken 
-5. arduino programmeren (PWM A, PWM B)
+5. ~~arduino programmeren (PWM A, PWM B)~~
 
 ##schema
 
