@@ -58,6 +58,12 @@ Breadboard:
 
 <img src="./artwork/output_bb.png" width=500px />
 
+
+##variabele spanning
+
+<img src="./artwork/voltreg_bb.png" width=500px />
+
+
 ##Voortgang:
 
 
